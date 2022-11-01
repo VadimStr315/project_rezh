@@ -1,0 +1,403 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Режевская Дума">
+    <meta name="description" content="">
+    <title>О Думе</title>
+    <link rel="stylesheet" href="{% static 'main_final/css/nicepage.css' %}"  media="screen">
+<link rel="stylesheet" href="{% static 'main_final/css/О-Думе.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'main_final/js/jquery.js' %}"defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'main_final/js/nicepage.js' %}"defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="О Думе">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode u-stick-footer"><header class="u-clearfix u-header u-header" id="sec-d734"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-custom-color-2 u-text-hover-custom-color-2" href="{% url 'index' %}" style="padding: 10px 4px;">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-custom-color-2 u-text-hover-custom-color-2" href="{% url 'appeals_info' %}" style="padding: 10px 4px;">Обращения</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-custom-color-2 u-text-hover-custom-color-2" href="{% url 'news' %}" style="padding: 10px 4px;">Новости</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-custom-color-2 u-text-hover-custom-color-2" href="{% url 'vote' %}" style="padding: 10px 4px;">Голосование</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-2 u-text-custom-color-2 u-text-hover-custom-color-2" href="{% url 'about' %}" style="padding: 10px 4px;">О Думе</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'index' %}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'index' %}">Обращения</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'news' %}">Новости</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'vote' %}">Голосование</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}">О Думе</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'main_final/images/Group.png'  %}" alt="" data-image-width="67" data-image-height="92"><span class="u-file-icon u-icon u-text-custom-color-2 u-icon-1"><img src="{% static 'main_final/images/1.png'  %}" alt=""></span><span class="u-icon u-text-custom-color-2 u-icon-2" data-href="{% if user.is_authenticated %}{% if user.is_superuser %}{% url 'admin:index' %}{% else %}{% url 'personal_area' %}{% endif %}{% else %}{% url 'auth' %}{% endif %}" data-page-id="80246748"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 55 55" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9117"></use></svg><svg class="u-svg-content" viewBox="0 0 55 55" x="0px" y="0px" id="svg-9117" style="enable-background:new 0 0 55 55;"><path d="M55,27.5C55,12.337,42.663,0,27.5,0S0,12.337,0,27.5c0,8.009,3.444,15.228,8.926,20.258l-0.026,0.023l0.892,0.752
+	c0.058,0.049,0.121,0.089,0.179,0.137c0.474,0.393,0.965,0.766,1.465,1.127c0.162,0.117,0.324,0.234,0.489,0.348
+	c0.534,0.368,1.082,0.717,1.642,1.048c0.122,0.072,0.245,0.142,0.368,0.212c0.613,0.349,1.239,0.678,1.88,0.98
+	c0.047,0.022,0.095,0.042,0.142,0.064c2.089,0.971,4.319,1.684,6.651,2.105c0.061,0.011,0.122,0.022,0.184,0.033
+	c0.724,0.125,1.456,0.225,2.197,0.292c0.09,0.008,0.18,0.013,0.271,0.021C25.998,54.961,26.744,55,27.5,55
+	c0.749,0,1.488-0.039,2.222-0.098c0.093-0.008,0.186-0.013,0.279-0.021c0.735-0.067,1.461-0.164,2.178-0.287
+	c0.062-0.011,0.125-0.022,0.187-0.034c2.297-0.412,4.495-1.109,6.557-2.055c0.076-0.035,0.153-0.068,0.229-0.104
+	c0.617-0.29,1.22-0.603,1.811-0.936c0.147-0.083,0.293-0.167,0.439-0.253c0.538-0.317,1.067-0.648,1.581-1
+	c0.185-0.126,0.366-0.259,0.549-0.391c0.439-0.316,0.87-0.642,1.289-0.983c0.093-0.075,0.193-0.14,0.284-0.217l0.915-0.764
+	l-0.027-0.023C51.523,42.802,55,35.55,55,27.5z M2,27.5C2,13.439,13.439,2,27.5,2S53,13.439,53,27.5
+	c0,7.577-3.325,14.389-8.589,19.063c-0.294-0.203-0.59-0.385-0.893-0.537l-8.467-4.233c-0.76-0.38-1.232-1.144-1.232-1.993v-2.957
+	c0.196-0.242,0.403-0.516,0.617-0.817c1.096-1.548,1.975-3.27,2.616-5.123c1.267-0.602,2.085-1.864,2.085-3.289v-3.545
+	c0-0.867-0.318-1.708-0.887-2.369v-4.667c0.052-0.519,0.236-3.448-1.883-5.864C34.524,9.065,31.541,8,27.5,8
+	s-7.024,1.065-8.867,3.168c-2.119,2.416-1.935,5.345-1.883,5.864v4.667c-0.568,0.661-0.887,1.502-0.887,2.369v3.545
+	c0,1.101,0.494,2.128,1.34,2.821c0.81,3.173,2.477,5.575,3.093,6.389v2.894c0,0.816-0.445,1.566-1.162,1.958l-7.907,4.313
+	c-0.252,0.137-0.502,0.297-0.752,0.476C5.276,41.792,2,35.022,2,27.5z M42.459,48.132c-0.35,0.254-0.706,0.5-1.067,0.735
+	c-0.166,0.108-0.331,0.216-0.5,0.321c-0.472,0.292-0.952,0.57-1.442,0.83c-0.108,0.057-0.217,0.111-0.326,0.167
+	c-1.126,0.577-2.291,1.073-3.488,1.476c-0.042,0.014-0.084,0.029-0.127,0.043c-0.627,0.208-1.262,0.393-1.904,0.552
+	c-0.002,0-0.004,0.001-0.006,0.001c-0.648,0.16-1.304,0.293-1.964,0.402c-0.018,0.003-0.036,0.007-0.054,0.01
+	c-0.621,0.101-1.247,0.174-1.875,0.229c-0.111,0.01-0.222,0.017-0.334,0.025C28.751,52.97,28.127,53,27.5,53
+	c-0.634,0-1.266-0.031-1.895-0.078c-0.109-0.008-0.218-0.015-0.326-0.025c-0.634-0.056-1.265-0.131-1.89-0.233
+	c-0.028-0.005-0.056-0.01-0.084-0.015c-1.322-0.221-2.623-0.546-3.89-0.971c-0.039-0.013-0.079-0.027-0.118-0.04
+	c-0.629-0.214-1.251-0.451-1.862-0.713c-0.004-0.002-0.009-0.004-0.013-0.006c-0.578-0.249-1.145-0.525-1.705-0.816
+	c-0.073-0.038-0.147-0.074-0.219-0.113c-0.511-0.273-1.011-0.568-1.504-0.876c-0.146-0.092-0.291-0.185-0.435-0.279
+	c-0.454-0.297-0.902-0.606-1.338-0.933c-0.045-0.034-0.088-0.07-0.133-0.104c0.032-0.018,0.064-0.036,0.096-0.054l7.907-4.313
+	c1.36-0.742,2.205-2.165,2.205-3.714l-0.001-3.602l-0.23-0.278c-0.022-0.025-2.184-2.655-3.001-6.216l-0.091-0.396l-0.341-0.221
+	c-0.481-0.311-0.769-0.831-0.769-1.392v-3.545c0-0.465,0.197-0.898,0.557-1.223l0.33-0.298v-5.57l-0.009-0.131
+	c-0.003-0.024-0.298-2.429,1.396-4.36C21.583,10.837,24.061,10,27.5,10c3.426,0,5.896,0.83,7.346,2.466
+	c1.692,1.911,1.415,4.361,1.413,4.381l-0.009,5.701l0.33,0.298c0.359,0.324,0.557,0.758,0.557,1.223v3.545
+	c0,0.713-0.485,1.36-1.181,1.575l-0.497,0.153l-0.16,0.495c-0.59,1.833-1.43,3.526-2.496,5.032c-0.262,0.37-0.517,0.698-0.736,0.949
+	l-0.248,0.283V39.8c0,1.612,0.896,3.062,2.338,3.782l8.467,4.233c0.054,0.027,0.107,0.055,0.16,0.083
+	C42.677,47.979,42.567,48.054,42.459,48.132z"></path></svg></span><span class="u-icon u-text-custom-color-2 u-icon-3" data-href="{% url 'index' %}#sec-c8f0" data-page-id="166367821"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 52.966 52.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d172"></use></svg><svg class="u-svg-content" viewBox="0 0 52.966 52.966" x="0px" y="0px" id="svg-d172" style="enable-background:new 0 0 52.966 52.966;"><path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+	c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+	C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+	S32.459,40,21.983,40z"></path></svg></span>
+        <h1 class="u-custom-font u-font-raleway u-text u-text-custom-color-2 u-text-default u-text-1">
+          <span style="font-weight: 700;">Режевская </span>Дума
+        </h1>
+      </div></header>
+    <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-20ab">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h4 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">История Думы</h4><span class="u-icon u-icon-1" data-href="{% url 'index' %}" data-page-id="166367821"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 52 52" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c9fe"></use></svg><svg class="u-svg-content" viewBox="0 0 52 52" x="0px" y="0px" id="svg-c9fe" style="enable-background:new 0 0 52 52;"><g><path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+		S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"></path><path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0
+		s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36
+		s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293
+		c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z"></path>
+</g></svg></span>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-2" id="sec-b4ae">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 1 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-eda1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">Режевская городская Дума образована 10 апреля 1994 года в результате выборов, назначенных в соответствии с Указом Президента Российской Федерации от 09.10.1993 года № 1617 «О реформировании представительных органов власти и органов местного самоуправления в Российской Федерации» на основании постановления главы администрации Свердловской области от 25.01.1994 года № 24 «О выборах депутатов Свердловской области Думы и органов местного самоуправления». Режевская городская Дума&nbsp;1 созыва&nbsp;состояла из 5 депутатов, избранных на основе всеобщего, равного и прямого избирательного права сроком на 2 года. Председательствовал на заседании Думы глава администрации г.Режа. постоянных депутатских комиссий и иных органов Режевская Дума не имела.&nbsp; &nbsp; &nbsp;&nbsp;</span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-text u-text-2">
+          <span style="font-weight: 700;" class="u-text-black"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">В компетенции Режевской городской Думы находились следующие вопросы:&nbsp; </span>&nbsp; &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">1.</span> Утверждение местного бюджета и отчета об его исполнении.&nbsp; &nbsp; &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">2.</span> Установление и отмена местных налогов и сборов.&nbsp; &nbsp; &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">3.</span> Предоставление налоговых льгот в части, поступающей в местный бюджет.&nbsp; &nbsp; &nbsp;<br>
+              <span style="font-weight: 700;">4.</span> Утверждение программы социально-экономического развития территорий.&nbsp; &nbsp; &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">5.</span> Утверждение регламента работы и порядка деятельности Думы.&nbsp; &nbsp; &nbsp;<br>
+              <span style="font-weight: 700;">6.</span> Принятие Положения (Устава) об общественном самоуправлении на территории.&nbsp; &nbsp; &nbsp;<br>
+              <span style="font-weight: 700;">7.</span> Осуществление координации деятельности органов территориального общественного самоуправления и населения.&nbsp; &nbsp; &nbsp;<br>
+              <span style="font-weight: 700;">8.</span> Осуществление контроля за деятельностью главы местного самоуправления по вопросам полномочий Думы.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/11994-1996.jpg'  %}" alt="" data-image-width="1280" data-image-height="935">
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-4" id="carousel_0897">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 2 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_9cba">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2"> Режевская Дума&nbsp;2 созыва&nbsp;образована 26 апреля 1996 года в результате выборов, назначенных постановлением Палаты Представителей Законодательного Собрания Свердловской области. Совместным решением Режевской городской Думы и глав местного самоуправления сел и поселка № 22 от 31.01.1996 г., учитывая мнение населения, выраженное 17 декабря 1995 года на местном референдуме, был определен численный состав представительного органа местного самоуправления – Режевской Думы – 15 депутатов.&nbsp; &nbsp; &nbsp;&nbsp;<br>Председателем Режевской Думы являлся избранный населением глава муниципального образования (ст.6 Устава МО «Режевской район»). В соответствии с Регламентом Режевской Думы (решение от 24.04.1996г.) из числа депутатов избирается заместитель Председателя Думы, который выполняет отдельные поручения Председателя, а в случае отсутствия последнего осуществляет его полномочия. Согласно решения Режевской Думы № 5 от 24.04.96г. были сформированы пять постоянных депутатских комиссий:&nbsp; мандатная, по селу и сельскому хозяйству, по социальным вопросам, по вопросам промышленности, строительства, транспорта, связи и коммунального хозяйства, по экономике и бюджету.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-align-left u-text u-text-2">
+          <span style="font-weight: 700;"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">В компетенции Режевской городской Думы находились следующие вопросы:&nbsp; </span>&nbsp;&nbsp;<br>
+              <span style="font-weight: 700;"> 1.</span> Принятие общеобязательных правил по предметам ведения муниципального образования.<br>
+              <span style="font-weight: 700;">2.</span> Установление порядка управления и распоряжения муниципальной собственностью.<br>
+              <span style="font-weight: 700;">3.</span> Утверждение Устава муниципального образования, внесение изменений и дополнений в Устав.<br>
+              <span style="font-weight: 700;">4.</span> Назначение местного референдума по предложению населения, по собственной инициативе или по предложению главы муниципального образования.<br>
+              <span style="font-weight: 700;">5. </span>Утверждение местного бюджета с учетом дотаций и субвенций.<br>
+              <span style="font-weight: 700;">6. </span>Утверждение отчета об исполнении местного бюджета.<br>
+              <span style="font-weight: 700;">7. </span>Установление и отмена в соответствии с действующим законодательством местных налогов и сборов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/21.jpg'  %}" alt="" data-image-width="1280" data-image-height="960">
+        <h5 class="u-align-left u-text u-text-3">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">8.</span> Введение в соответствии с законодательством налоговых льгот в отношении местных налогов и сборов.<br>
+              <span style="font-weight: 700;">9. </span>Принятие планов и программ развития муниципального образования, утверждение отчетов об их исполнении<br>
+              <span style="font-weight: 700;">10.</span> Утверждение положений о внебюджетных фондах и валютных фондах и осуществление контроля за их использованием.<br>
+              <span style="font-weight: 700;">11.</span> Контроль за деятельностью администрации муниципального образования как исполнительного органа.<br>
+              <span style="font-weight: 700;">12.</span> Определение порядка выпуска муниципальных займов, лотерей, предоставления ссуд.<br>
+              <span style="font-weight: 700;">13.</span> Принятие проекта генерального плана развития муниципального образования и схемы застройки территории.<br>
+              <span style="font-weight: 700;">14.</span> Учреждение муниципальных наград и званий.<br>
+              <span style="font-weight: 700;">15.</span> Рассмотрение ходатайств и внесение в соответствующие органы предоставлений о награждении орденами и медалями России за особо выдающиеся заслуги перед муниципальным образованием.<br>
+              <span style="font-weight: 700;">16.</span> Защита прав депутатов, лишение депутатской неприкосновенности, досрочное прекращение полномочий депутатов.<br>
+              <span style="font-weight: 700;">17. &nbsp;</span>Назначение даты проведения выборов главы муниципального образования.<br>
+              <span style="font-weight: 700;">18. </span>Принятие отставки главы муниципального образования и назначение внеочередных выборов главы муниципального образования.<br>1<span style="font-weight: 700;">9.</span> Контроль выполнения решений Думы предприятиями, учреждениями, организациями независимо от подчиненности и форм собственности, заслушивание по этим вопросам соответствующих руководителей.<br>
+              <span style="font-weight: 700;">20.</span> Утверждение официальных символов муниципального образования.<br>
+              <span style="font-weight: 700;">21. </span>Решение вопроса о передаче части функций местного самоуправления органам государственной власти.<br>
+              <span style="font-weight: 700;">
+                <span style="font-weight: 700;">22</span>.
+              </span> Осуществление законодательной инициативы в Законодательном Собрании Свердловской области.
+            </span>
+            <br>
+          </span>
+        </h5>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-6" id="carousel_28e6">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 3 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="carousel_eab2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">Режевская Дума&nbsp;3 созыва&nbsp;образована 26 марта 2000 года в результате выборов, назначенных постановлением Палаты Представителей Законодательного Собрания Свердловской области № 212-ППП от 24.12.99г.&nbsp;</span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-text u-text-2">
+          <span style="font-weight: 700;"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">В компетенции Режевской Думы находятся в соответствии с действующим законодательством те же вопросы, что и в компетенции Думы 2 созыва за исключением:&nbsp; &nbsp;</span> &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">1.</span> Утверждения положений о внебюджетных фондах и валютных фондах и осуществление контроля за их деятельностью.&nbsp; &nbsp; &nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">2.</span> Лишения депутатской неприкосновенности.<br>
+              <br>Руководит Режевской Думой избранный населением глава муниципального образования, из числа депутатов избирается заместитель Председателя Думы. Структура Режевской Думы утверждена решением № 6 от 12.04.2000 г. и включает в себя пять постоянных депутатских комиссии: мандатная, по селу и сельскому хозяйству, по социальным вопросам, по вопросам промышленности, строительства, транспорта, связи и коммунального хозяйства, по экономике и бюджету. Численный состав Режевской Думы 15 депутатов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/21-54.jpg'  %}" alt="" data-image-width="1280" data-image-height="960">
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-8" id="carousel_68b5">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 4 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="carousel_4b26">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span class="u-text-black"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">Режевская Дума&nbsp;4 созыва&nbsp;образована 14 марта 2004 года в результате выборов, назначенных решением Режевской Думы от&nbsp; 26.12.2003 года № 79.&nbsp; &nbsp; &nbsp;&nbsp;<br>Руководит Режевской Думой до 23.05.2006 года избранный населением глава муниципального образования, из числа депутатов избирается заместитель Председателя Думы. Структура Думы утверждена решением Режевской Думы от 24.03.2004 года № 8 и включает в себя 6 постоянных депутатских комиссий: по селу&nbsp; и сельскому хозяйству, по социальным вопросам, по городскому хозяйству, по экономике и бюджету, по вопросам местного самоуправления, мандатная. Численный состав Режевской Думы – 15 депутатов.&nbsp; &nbsp; &nbsp; &nbsp;<br>В компетенции Режевской Думы находятся в соответствии с действующим законодательством те же вопросы, что и в компетенции Думы 2 и 3 созывов, до 18.05.2005 г.18.05.2005 года решением Режевской Думы принимается Устав Режевского городского округа.&nbsp; &nbsp; &nbsp; &nbsp;<br>Решением Режевской Думы от 24.05.2006 года № 47 Режевская Дума наделяется правами юридического лица, Председатель Режевской Думы избирается из числа депутатов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-align-left u-text u-text-2">
+          <span style="font-weight: 700;"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">В компетенции Режевской городской Думы находились следующие вопросы:&nbsp; </span>&nbsp;&nbsp;<br>
+              <span style="font-weight: 700;">
+                <span style="font-weight: 700;"></span>1.
+              </span> Принятие Устава Режевского городского округа и внесение в него изменений<br>
+              <span style="font-weight: 700;">2.</span> Утверждение местного бюджета и отчета о его исполнении<br>
+              <span style="font-weight: 700;">3. </span>Установление, изменение и отмена местных налогов и сборов в соответствии с законодательством Российской Федерации о налогах и сборах<br>
+              <span style="font-weight: 700;">4.</span> Принятие планов и программ развития Режевского городского округа, утверждение отчетов об их исполнении<br>
+              <span style="font-weight: 700;">5.</span> Определение порядка управления и распоряжения имуществом, находящимся в муниципальной собственности<br>
+              <span style="font-weight: 700;">6.</span> Определение порядка принятия решений о создании, реорганизации и ликвидации муниципальных предприятий и муниципальных учреждений, а также об установлении тарифов на услуги муниципальных предприятий и муниципальных учреждений
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/42004-2008.jpg'  %}" alt="" data-image-width="1280" data-image-height="940">
+        <h5 class="u-align-left u-text u-text-3">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">
+                <span style="font-weight: 700;"></span>7.
+              </span> Определение порядка участия Режевского городского округа в организациях межмуниципального сотрудничества<br>
+              <span style="font-weight: 700;">8.</span> Определение порядка материально-технического и организационного обеспечения деятельности органов местного самоуправления<br>
+              <span style="font-weight: 700;">9.</span> Контроль за исполнением органами местного самоуправления и должностными лицами местного самоуправления полномочий по решению вопросов местного значения.<br>
+              <span style="font-weight: 700;">10.</span> Установление официальных символов Режевского городского округа<br>
+              <span style="font-weight: 700;">11.</span> Утверждение структуры администрации Режевского городского округа по представлению главы Режевского городского округа<br>
+              <span style="font-weight: 700;">12.</span> Формирование избирательной комиссии Режевского городского округа<br>
+              <span style="font-weight: 700;">13.</span> Установление налоговых льгот по уплате местных налогов, оснований и порядка их применения<br>
+              <span style="font-weight: 700;">14.</span> Установление дополнительных оснований и условий предоставления отсрочки и рассрочки уплаты местных налогов, предоставления инвестиционных налоговых кредитов<br>
+              <span style="font-weight: 700;">15.</span> Утверждение порядка и условий приватизации муниципального имущества<br>
+              <span style="font-weight: 700;">16.</span> Утверждение генерального плана Режевского городского округа, в том числе внесение изменений в него, по представлению главы Режевского городского округа<br>
+              <span style="font-weight: 700;">17.</span> Утверждение правил землепользования и застройки территории Режевского городского округа, в том числе внесение изменений в них, по представлению главы Режевского городского округа<br>
+              <span style="font-weight: 700;">18.</span> Принятие решений об учреждении межмуниципальных хозяйственных обществ в форме закрытых акционерных обществ и обществ с ограниченной ответственностью и решений о создании некоммерческих организаций в форме автономных некоммерческих организаций и фондов<br>
+              <span style="font-weight: 700;">19.</span> Установление порядка организационно-правового, финансового, материально-технического обеспечения первичных мер пожарной безопасности в границах населенных пунктов Режевского городского округа, определение целей, задач, порядка создания и организации деятельности муниципальной пожарной охраны, порядка ее взаимоотношений с другими видами пожарной охраны по представлению главы Режевского городского округа<br>
+              <span style="font-weight: 700;">20</span>
+              <span style="font-weight: 700;">.</span> Утверждение в соответствии с федеральными законами порядка предоставления, использования и изъятия земельных участков по представлению главы Режевского городского округа<br>
+              <span style="font-weight: 700;">21.</span> Установление тарифной системы оплаты труда работников муниципальных учреждений и порядка ее применения<br>
+              <span style="font-weight: 700;">22.</span> Принятие отставки главы Режевского городского округа<br>
+              <span style="font-weight: 700;">23.</span> Назначение муниципальных выборов и местного референдума<br>
+              <span style="font-weight: 700;">24.</span> Утверждение схемы избирательных округов на территории муниципального образования<br>
+              <span style="font-weight: 700;">25. </span>Внесение в Избирательную комиссию Свердловской области инициативы, оформленной в виде нормативного правового акта Режевской Думы, о возложении полномочий избирательной комиссии Режевского городского округа на соответствующую территориальную избирательную комиссию<br>
+              <span style="font-weight: 700;">26.</span> Внесение в законодательный орган государственной власти Свердловской области предложений в порядке законодательной инициативы, оформленных в виде нормативного правового акта Режевской Думы, об изменении границ Режевского городского округа, о преобразовании Режевского городского округа<br>
+              <span style="font-weight: 700;">27.</span> Установление порядка выпуска муниципальных займов, лотерей<br>
+              <span style="font-weight: 700;">28.</span> Учреждение муниципальных наград, почетных и специальных званий, премий, стипендий<br>
+              <span style="font-weight: 700;">2</span>
+              <span style="font-weight: 700;">9. </span>Присвоение звания "Почетный гражданин муниципального образования"<br>
+              <span style="font-weight: 700;">30.</span> Определение порядка установки мемориальных досок, памятников, переименования улиц, площадей, Дворцов и домов культуры, клубов и т.д.<br>
+              <span style="font-weight: 700;">31. </span>Досрочное прекращение полномочий депутатов Режевской Думы<br>
+              <span style="font-weight: 700;">32. </span>Определение порядка и условий предоставления финансовой помощи и бюджетных ссуд из местного бюджета<br>
+              <span style="font-weight: 700;">33. </span>Определение порядка осуществления муниципальных заимствований<br>
+              <span style="font-weight: 700;">34.</span> Контроль исполнения решений Режевской Думы предприятиями, учреждениями, организациями независимо от подчиненности и форм собственности; заслушивание по этим вопросам соответствующих руководителей<br>
+              <span style="font-weight: 700;">35.</span> Осуществление законодательной инициативы в Законодательном Собрании Свердловской области.
+            </span>
+            <br>
+          </span>
+        </h5>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-10" id="carousel_0c55">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 5 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-11" id="carousel_8890">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text-custom-color-2">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2"> Режевская Дума&nbsp;5 созыва&nbsp;образована 14 марта 2008 года в результате выборов, назначенных решением Режевской Думы от 05.12.2007 года № 63&nbsp; &nbsp; &nbsp; &nbsp;<br>Руководит Режевской Думой избранный из числа депутатов Председатель Думы. Структура Режевской Думы утверждена решением № 65 от 26.03.2008г. и включает в себя 6 постоянных депутатских комиссии: мандатная, по селу и сельскому хозяйству, по социальным вопросам, по вопросам промышленности, строительству, коммунальному хозяйству, транспорту и &nbsp;связи, по экономике и бюджету.&nbsp; Численный состав – 20 депутатов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-text u-text-2">
+          <span style="font-weight: 700;"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;">В компетенции Режевской Думы находятся в соответствии с действующим законодательством те же вопросы, что и в компетенции Думы 4 созыва с учетом следующих вопросов:</span>
+              <br>
+              <span style="font-weight: 700;">1.</span> Утверждение порядка формирования, обеспечения размещения, исполнения и контроля за исполнением муниципального заказа по представлению главы Режевского городского округа.<br>
+              <span style="font-weight: 700;">2.</span> Определение порядка привлечения граждан к выполнению на добровольной основе социально значимых для Режевского городского округа работ; принятие решения о привлечении граждан к выполнению на добровольной основе социально значимых для Режевского городского округа работ в целях решения вопросов местного значения, предусмотренных подпунктами 10, 13, 21 пункта 1 статьи 6 Устава Режевского городского округа.<br>
+              <span style="font-weight: 700;">3.</span> Установление правил использования водных объектов общего пользования для личных и бытовых нужд.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/5.jpg'  %}" alt="" data-image-width="1280" data-image-height="883">
+        <h5 class="u-text u-text-3">
+          <span style="font-weight: 700;"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">
+              <span style="font-weight: 700;"> 4.</span> Формирование контрольного органа Режевского городского округа и принятие положения об организации его деятельности.
+            </span>
+            <br>
+          </span>
+        </h5>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-12" id="carousel_8b7f">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 7 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-13" id="carousel_61a8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span class="u-text-black"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2"> Режевская Дума&nbsp;<b>7 созыва</b>&nbsp;осуществляла свою деятельность в соответствии с наделенными Уставом Режевского городского округа полномочиями по решению вопросов местного значения, руководствуясь Регламентом Режевской Думы, нормативными правовыми актами Думы, на основании планов работы, утверждаемых Решениями Думы, а также с учетом необходимости оперативного решения тех или иных вопросов.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Состав Режевской Думы 7 созыва был сформирован в результате муниципальных выборов 20 марта 2016 года в количестве 20 депутатов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/DSC_91571.jpg'  %}" alt="" data-image-width="1600" data-image-height="1060">
+        <h5 class="u-text u-text-2">
+          <span style="font-weight: 700;" class="u-text-black"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">В связи с досрочным прекращением полномочий Председателя Режевской Думы Копалова А.В.,&nbsp; исполнение&nbsp;&nbsp; полномочий&nbsp;&nbsp; Председателя&nbsp; Режевской Думы с 20 ноября 2020 года депутаты Режевской Думы возложили на заместителя Председателя Режевской Думы Кураева Валентина Геннадьевича до избрания Председателя Режевской Думы (решение Режевской Думы от 18.11.2020 г. № 51).&nbsp;<br>&nbsp; &nbsp; &nbsp;<br>Персональный состав постоянных депутатских комиссий Режевской Думы седьмого созыва включал в себя 7 постоянных депутатских комиссии: мандатная, по экономике и бюджету, по социальным вопросам, по вопросам промышленности, строительству, коммунальному хозяйству, транспорту и связи, по селу и сельскому хозяйству, по вопросам местного самоуправления, по противодействию коррупции.
+            </span>
+            <br>
+          </span>
+        </h5>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-3 u-section-14" id="carousel_729b">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-custom-color-2 u-text-default u-text-1">Режевская Дума 8 созыва</h4>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-15" id="carousel_d81a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-text u-text-1">
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2"> Режевская Дума&nbsp;<b>8 созыва</b>&nbsp;образована 21 сентября 2021 года в результате выборов, назначенных решением Режевской Думы от 23.06.2021 года № 16 в количестве 20 депутатов.&nbsp; &nbsp; &nbsp;&nbsp;<br>Руководит Режевской Думой избранный из числа депутатов Председатель Режевской Думы Бачинин Николай Аркадьевич.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <h5 class="u-text u-text-2">
+          <span style="font-weight: 700;" class="u-text-black"></span>
+          <span style="font-size: 1.125rem;" class="u-text-custom-color-2">
+            <span class="u-text-custom-color-2">Персональный состав постоянных депутатских комиссий Режевской Думы восьмого созыва включал в себя 7 постоянных депутатских комиссии: мандатная, по экономике и бюджету, по социальным вопросам, по вопросам промышленности, строительству, коммунальному хозяйству, транспорту и связи, по селу и сельскому хозяйству, по вопросам местного самоуправления, по противодействию коррупции.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <br>В компетенции Режевской Думы находятся в соответствии в соответствии с наделенными Уставом Режевского городского округа полномочиями по решению вопросов местного значения, руководствуясь Регламентом Режевской Думы, нормативными правовыми актами Думы, на основании планов работы, утверждаемых Решениями Думы, а также с учетом необходимости оперативного решения тех или иных вопросов.
+            </span>
+            <br>
+          </span>
+        </h5>
+        <img class="u-image u-image-default u-image-1" src="{% static 'main_final/images/8.jpeg' %}" alt="" data-image-width="1600" data-image-height="1067">
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-custom-color-1 u-footer u-footer" id="sec-6033"><div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'main_final/images/Group1.png'  %}" alt="" data-image-width="63" data-image-height="91">
+        <h5 class="u-align-center u-text u-text-white u-text-1"> 623750, Россия, Свердловская область, г. Реж ул. Красноармейская, 16</h5>
+        <p class="u-custom-font u-heading-font u-small-text u-text u-text-variant u-text-2"> © 2022 Официальный сайт Режевской Думы </p>
+      </div></footer>
+  </body>
+</html>
